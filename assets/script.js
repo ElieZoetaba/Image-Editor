@@ -74,3 +74,9 @@ fileInput.onchange = () => {
       scaleYClick = true;
     }
   });
+
+  previewButton.addEventListener("click", () => {
+    downloadButton.classList.remove("hide");
+    let imgSrc = cropper.getCroppedCanvas({}).toDataURL();
+    previewImage.src = imgSrc;
+  });
