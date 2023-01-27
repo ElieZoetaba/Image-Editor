@@ -10,3 +10,4 @@ const previewButton = document.getElementById("preview");
 const previewImage = document.getElementById("preview-image");
 const options = document.querySelector(".options-btn");
 let cropper = "";
+let fileName = "";
