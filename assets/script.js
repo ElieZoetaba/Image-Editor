@@ -12,3 +12,4 @@ const options = document.querySelector(".options-btn");
 let cropper = "";
 let fileName = "";
 let scaleXClick = false,
+scaleYClick = false;
