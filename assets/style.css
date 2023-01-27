@@ -75,3 +75,12 @@ a {
     align-items: center;
     justify-content: space-between;
   }
+
+  .options-btn button {
+    background-color: #dceafe;
+    color: #025bee;
+    border-radius: 0.3em;
+    font-size: 0.8em;
+    height: 3.2em;
+    width: 3.2em;
+  }
