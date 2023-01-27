@@ -60,3 +60,11 @@
   img {
     max-width: 100%;
   }
+
+  button,
+a {
+  border: none;
+  outline: none;
+  place-items: center;
+  cursor: pointer;
+}
