@@ -123,4 +123,7 @@ a {
       width: 60%;
       margin: 0 auto;
     }
+    .editor-container {
+        margin: 0 0 0.6em 0;
+      }
 }
