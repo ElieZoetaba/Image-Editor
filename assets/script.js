@@ -5,3 +5,4 @@ let aspectRatioBtns = document.querySelectorAll(".aspect-ratio-btns");
 const rotateRightButton = document.getElementById("rotate-right");
 const rotateLeftButton = document.getElementById("rotate-left");
 const scaleXButton = document.getElementById("scale-X-button");
+const scaleYButton = document.getElementById("scale-Y-button");
