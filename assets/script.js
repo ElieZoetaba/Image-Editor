@@ -15,3 +15,9 @@ let scaleXClick = false,
 scaleYClick = false;
 let rotateRightValue = -45,
 rotateLeftValue = 45;
+
+window.onload = () => {
+    downloadButton.classList.add("hide");
+    options.classList.add("hide");
+    previewButton.classList.add("hide");
+};
