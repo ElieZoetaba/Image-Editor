@@ -7,3 +7,4 @@ const rotateLeftButton = document.getElementById("rotate-left");
 const scaleXButton = document.getElementById("scale-X-button");
 const scaleYButton = document.getElementById("scale-Y-button");
 const previewButton = document.getElementById("preview");
+const previewImage = document.getElementById("preview-image");
