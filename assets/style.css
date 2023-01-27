@@ -118,4 +118,9 @@ a {
       left: 50%;
       top: 1em;
     }
-  }
+    img {
+      display: block;
+      width: 60%;
+      margin: 0 auto;
+    }
+}
