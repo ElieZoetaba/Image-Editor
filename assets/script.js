@@ -13,4 +13,5 @@ let cropper = "";
 let fileName = "";
 let scaleXClick = false,
 scaleYClick = false;
-let rotateRightValue = -45;
+let rotateRightValue = -45,
+rotateLeftValue = 45;
