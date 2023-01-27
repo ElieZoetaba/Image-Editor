@@ -21,3 +21,19 @@ window.onload = () => {
     options.classList.add("hide");
     previewButton.classList.add("hide");
 };
+
+fileInput.onchange = () => {
+    let reader = new FileReader();
+    reader.readAsDataURL(fileInput.files[0]);
+    reader.onload = () => {
+      image.setAttribute("src", reader.result);
+      if (cropper) {
+        cropper.destroy();
+      }
+      cropper = new Cropper(image);
+      options.classList.remove("hide");
+      previewButton.classList.remove("hide");
+    };
+    fileName = fileInput.files[0].name.split(".")[0];
+  };
+  
