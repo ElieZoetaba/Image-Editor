@@ -95,3 +95,13 @@ a {
     justify-content: space-around;
     margin-top: 1em;
   }
+
+  #preview,
+#download {
+  background-color: #025bee;
+  font-size: 1em;
+  padding: 0.8em 1em;
+  color: #ffffff;
+  border-radius: 0.3em;
+  text-decoration: none;
+}
