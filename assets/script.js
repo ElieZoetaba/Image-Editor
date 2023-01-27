@@ -64,3 +64,13 @@ fileInput.onchange = () => {
       scaleXClick = true;
     }
   });
+
+  scaleYButton.addEventListener("click", () => {
+    if (scaleYClick) {
+      cropper.scaleY(1);
+      scaleYClick = false;
+    } else {
+      cropper.scaleY(-1);
+      scaleYClick = true;
+    }
+  });
