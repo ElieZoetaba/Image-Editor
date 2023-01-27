@@ -54,3 +54,13 @@ fileInput.onchange = () => {
   rotateLeftButton.addEventListener("click", () => {
     cropper.rotate(rotateLeftValue);
   });
+
+  scaleXButton.addEventListener("click", () => {
+    if (scaleXClick) {
+      cropper.scaleX(1);
+      scaleXClick = false;
+    } else {
+      cropper.scaleX(-1);
+      scaleXClick = true;
+    }
+  });
