@@ -84,3 +84,7 @@ a {
     height: 3.2em;
     width: 3.2em;
   }
+
+  .options-btn button img {
+    width: 1.1em;
+  }
