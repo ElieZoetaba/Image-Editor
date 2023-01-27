@@ -80,3 +80,9 @@ fileInput.onchange = () => {
     let imgSrc = cropper.getCroppedCanvas({}).toDataURL();
     previewImage.src = imgSrc;
   });
+
+  downloadButton.addEventListener("click", (e) => {
+    let imgSrc = cropper.getCroppedCanvas({}).toDataURL();
+    downloadButton.download = `cropped_${fileName}.png`;
+    downloadButton.setAttribute("href", imgSrc);
+  });
