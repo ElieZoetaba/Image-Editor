@@ -50,3 +50,7 @@ fileInput.onchange = () => {
   rotateRightButton.addEventListener("click", () => {
     cropper.rotate(rotateRightValue);
   });
+
+  rotateLeftButton.addEventListener("click", () => {
+    cropper.rotate(rotateLeftValue);
+  });
