@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 [](http://i.imgur.com/y8g506n.png?1)
 # Image editor HTML, CSS and JavaScript
 
