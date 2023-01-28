@@ -12,77 +12,77 @@ const options = document.querySelector(".options-btn");
 let cropper = "";
 let fileName = "";
 let scaleXClick = false,
-scaleYClick = false;
+  scaleYClick = false;
 let rotateRightValue = -45,
-rotateLeftValue = 45;
+  rotateLeftValue = 45;
 
 window.onload = () => {
-    downloadButton.classList.add("hide");
-    options.classList.add("hide");
-    previewButton.classList.add("hide");
+  downloadButton.classList.add("hide");
+  options.classList.add("hide");
+  previewButton.classList.add("hide");
 };
 
 fileInput.onchange = () => {
-    let reader = new FileReader();
-    reader.readAsDataURL(fileInput.files[0]);
-    reader.onload = () => {
-      image.setAttribute("src", reader.result);
-      if (cropper) {
-        cropper.destroy();
-      }
-      cropper = new Cropper(image);
-      options.classList.remove("hide");
-      previewButton.classList.remove("hide");
-    };
-    fileName = fileInput.files[0].name.split(".")[0];
+  let reader = new FileReader();
+  reader.readAsDataURL(fileInput.files[0]);
+  reader.onload = () => {
+    image.setAttribute("src", reader.result);
+    if (cropper) {
+      cropper.destroy();
+    }
+    cropper = new Cropper(image);
+    options.classList.remove("hide");
+    previewButton.classList.remove("hide");
   };
+  fileName = fileInput.files[0].name.split(".")[0];
+};
 
-  aspectRatioBtns.forEach((element) => {
-    element.addEventListener("click", () => {
-      if (element.innerText == "Free") {
-        cropper.setAspectRatio(NaN);
-      } else {
-        cropper.setAspectRatio(eval(element.innerText.replace(":", "/")));
-      }
-    });
-  });
-  
-  rotateRightButton.addEventListener("click", () => {
-    cropper.rotate(rotateRightValue);
-  });
-
-  rotateLeftButton.addEventListener("click", () => {
-    cropper.rotate(rotateLeftValue);
-  });
-
-  scaleXButton.addEventListener("click", () => {
-    if (scaleXClick) {
-      cropper.scaleX(1);
-      scaleXClick = false;
+aspectRatioBtns.forEach((element) => {
+  element.addEventListener("click", () => {
+    if (element.innerText == "Free") {
+      cropper.setAspectRatio(NaN);
     } else {
-      cropper.scaleX(-1);
-      scaleXClick = true;
+      cropper.setAspectRatio(eval(element.innerText.replace(":", "/")));
     }
   });
+});
 
-  scaleYButton.addEventListener("click", () => {
-    if (scaleYClick) {
-      cropper.scaleY(1);
-      scaleYClick = false;
-    } else {
-      cropper.scaleY(-1);
-      scaleYClick = true;
-    }
-  });
+rotateRightButton.addEventListener("click", () => {
+  cropper.rotate(rotateRightValue);
+});
 
-  previewButton.addEventListener("click", () => {
-    downloadButton.classList.remove("hide");
-    let imgSrc = cropper.getCroppedCanvas({}).toDataURL();
-    previewImage.src = imgSrc;
-  });
+rotateLeftButton.addEventListener("click", () => {
+  cropper.rotate(rotateLeftValue);
+});
 
-  downloadButton.addEventListener("click", (e) => {
-    let imgSrc = cropper.getCroppedCanvas({}).toDataURL();
-    downloadButton.download = `cropped_${fileName}.png`;
-    downloadButton.setAttribute("href", imgSrc);
-  });
+scaleXButton.addEventListener("click", () => {
+  if (scaleXClick) {
+    cropper.scaleX(1);
+    scaleXClick = false;
+  } else {
+    cropper.scaleX(-1);
+    scaleXClick = true;
+  }
+});
+
+scaleYButton.addEventListener("click", () => {
+  if (scaleYClick) {
+    cropper.scaleY(1);
+    scaleYClick = false;
+  } else {
+    cropper.scaleY(-1);
+    scaleYClick = true;
+  }
+});
+
+previewButton.addEventListener("click", () => {
+  downloadButton.classList.remove("hide");
+  let imgSrc = cropper.getCroppedCanvas({}).toDataURL();
+  previewImage.src = imgSrc;
+});
+
+downloadButton.addEventListener("click", (e) => {
+  let imgSrc = cropper.getCroppedCanvas({}).toDataURL();
+  downloadButton.download = `cropped_${fileName}.png`;
+  downloadButton.setAttribute("href", imgSrc);
+});
