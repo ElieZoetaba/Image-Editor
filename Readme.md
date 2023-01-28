@@ -19,6 +19,8 @@ These instructions will get you a copy of the project up and running on your loc
 1. Clone the repository onto your local machine using the command 
 ```bash
 $ git clone https://github.com/ElieZoetaba/Image-Editor.git
+$ cd Image-Editor
+$ code .
 ```
 2. Open the project in your code editor
 3. Open the index.html file in your web browser to view the project
@@ -46,6 +48,3 @@ If you would like to contribute to this project, please create a fork of the rep
 ## Contact
 
 - Email : zoetabaelie@gmail.com
-
-=======
->>>>>>> 6ac743c (Delete readme)
