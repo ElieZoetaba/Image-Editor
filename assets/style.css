@@ -4,7 +4,6 @@
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
   }
-
   .wrapper {
     width: 90%;
     position: absolute;
@@ -15,31 +14,26 @@
     align-items: center;
     justify-content: space-between;
   }
-
   .editor-container,
-.preview-container {
-  display: block;
-  position: relative;
-  width: 100%;
-  background-color: #ffffff;
-  padding: 2em 1em;
-  box-shadow: 0 1.25em 4em rgba(8, 6, 75, 0.15);
-  border-radius: 0.5em;
-}
-
-.editor-container {
+  .preview-container {
+    display: block;
+    position: relative;
+    width: 100%;
+    background-color: #ffffff;
+    padding: 2em 1em;
+    box-shadow: 0 1.25em 4em rgba(8, 6, 75, 0.15);
+    border-radius: 0.5em;
+  }
+  .editor-container {
     margin: 0 0.6em 0 0;
   }
-
-.preview-container {
+  .preview-container {
     display: grid;
     place-items: center;
   }
-
   input[type="file"] {
     display: none;
   }
-
   label {
     display: block;
     background-color: #025bee;
@@ -52,30 +46,25 @@
     margin: auto;
     cursor: pointer;
   }
-
   .image-container {
     margin-bottom: 1em;
   }
-
   img {
     max-width: 100%;
   }
-
   button,
-a {
-  border: none;
-  outline: none;
-  place-items: center;
-  cursor: pointer;
-}
-
-.options-btn {
+  a {
+    border: none;
+    outline: none;
+    place-items: center;
+    cursor: pointer;
+  }
+  .options-btn {
     margin-top: 1em;
     display: flex;
     align-items: center;
     justify-content: space-between;
   }
-
   .options-btn button {
     background-color: #dceafe;
     color: #025bee;
@@ -84,32 +73,27 @@ a {
     height: 3.2em;
     width: 3.2em;
   }
-
   .options-btn button img {
     width: 1.1em;
   }
-
   .action-btns {
     display: flex;
     align-items: center;
     justify-content: space-around;
     margin-top: 1em;
   }
-
   #preview,
-#download {
-  background-color: #025bee;
-  font-size: 1em;
-  padding: 0.8em 1em;
-  color: #ffffff;
-  border-radius: 0.3em;
-  text-decoration: none;
-}
-
-.hide {
+  #download {
+    background-color: #025bee;
+    font-size: 1em;
+    padding: 0.8em 1em;
+    color: #ffffff;
+    border-radius: 0.3em;
+    text-decoration: none;
+  }
+  .hide {
     display: none;
   }
-
   @media screen and (max-width: 1200px) {
     .wrapper {
       flex-direction: column;
@@ -124,6 +108,7 @@ a {
       margin: 0 auto;
     }
     .editor-container {
-        margin: 0 0 0.6em 0;
-      }
-}
+      margin: 0 0 0.6em 0;
+    }
+  }
+  
