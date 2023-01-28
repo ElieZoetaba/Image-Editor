@@ -46,6 +46,3 @@ If you would like to contribute to this project, please create a fork of the rep
 
 - Email : zoetabaelie@gmail.com
 
-
-![](http://i.imgur.com/2tAksHG.gif)
-
