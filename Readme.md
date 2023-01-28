@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 [](http://i.imgur.com/y8g506n.png?1)
 # Image editor HTML, CSS and JavaScript
 
@@ -46,3 +47,5 @@ If you would like to contribute to this project, please create a fork of the rep
 
 - Email : zoetabaelie@gmail.com
 
+=======
+>>>>>>> 6ac743c (Delete readme)
